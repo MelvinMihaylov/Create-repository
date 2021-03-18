@@ -1,10 +1,10 @@
 package prj1;
 
 public class User {
-   private String name;
+   private String Myname;
    
    public String getName() {
-	   return name;
+	   return Myname;
    }
    
   public void setname(StringName) {
