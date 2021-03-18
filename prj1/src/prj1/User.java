@@ -1,15 +1,13 @@
 package prj1;
 
 public class User {
-   private String name;
+   private String MyName;
    
    public String getName() {
-	   return name;
+	   return MyName;
    }
    
-  public void setname(StringName) {
-	  this.name = name;
-	  
+  public void setname(String name) {
+	  this.MyName = name;
   }
-  
 }
