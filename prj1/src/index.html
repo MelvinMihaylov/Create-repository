@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<title>УСП курсов проект</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<style>
+  .w3-sidebar a {
+    font-family: "Roboto", sans-serif;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .w3-wide {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .rainbow-text {
+    font: verdana small-caps bold 30px/45px;
+    background-image: linear-gradient(to left,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .default:hover {
+    background: #e7e7e7;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+</style>
+
+<body class="w3-content" style="max-width: 1080px">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index: 2; width: 250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-20">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <h3 class="w3-wide"><b>PhoneSearcher</b></h3>
+    </div>
+    <p class="w3-center">
+    <p class="w3-center">Search</p>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <ul id="myUL">
+      <li><a href="#Oneplus 7T">Oneplus 7T</a></li>
+      <li><a href="#Samsung Galaxy S21 Ultra">Samsung Galaxy S21 Ultra</a></li>
+      <li><a href="#Oneplus Nord">Oneplus Nord</a></li>
+      <li><a href="#Samsung Galaxy Note 20 Ultra">Samsung Galaxy Note 20 Ultra</a></li>
+      <li><a href="#Xiaomi Redmi Note 8 Pro">Xiaomi Redmi Note 8 Pro</a></li>
+      <li><a href="#Apple Iphone 12">Apple Iphone 12</a></li>
+      <li><a href="#Apple Iphone 12 Pro">Apple Iphone 12 Pro</a></li>
+      <li><a href="#Lenovo Legion Duel">Lenovo Legion Duel</a></li>
+      <li><a href="#Samsung Galaxy A42 5G">Samsung Galaxy A42 5G</a></li>
+      <li><a href="#Huawei P30 Pro">Huawei P30 Pro</a></li>
+      <li><a href="#Huawei Mate 20 Pro">Huawei Mate 20 Pro</a></li>
+      <li><a href="#Samsung Galaxy S10e">Samsung Galaxy S10e</a></li>
+    </ul>
+    </p>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide">PhoneSearcher 1.0</div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left: 250px">
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top: 83px"></div>
+
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+    </header>
+
+    <!-- Image header -->
+    <div class="w3-display-container w3-container">
+      <img src="https://i.ibb.co/7bftrjv/The-Best-Phones-in-2021.jpg" alt="Jeans" style="width: 100%" />
+      <div class="rainbow-text w3-display-middle w3-text-indigo" font-weight: bold;>
+        <b>
+          <h1 class="w3-jumbo w3-hide-jumbo">New arrivals</h1>
+        </b>
+        <h1 class="w3-hide-small">COLLECTION 2021</h1>
+
+      </div>
+    </div>
+
+    <div class="w3-container w3-text-grey">
+
+    </div>
+
+    <!-- Product grid -->
+    <div class="w3-row w3-grayscale">
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://p1.akcdn.net/full/619339615.oneplus-7t-pro-256gb-8gb-ram.jpg" style="width: 100%"
+              id="Oneplus 7T" />
+            <span class="w3-tag w3-display-topleft">Best seller</span>
+          </div>
+          <p>
+            Oneplus 7T <br>
+            Screen: 6.5 inch Oled 90Hz - 1080 x 2400 pixels <br>
+            Processor: Qualcomm Snapdragon 855+<br>
+            Camera: 48+12+16 megapixel (wide, tele ultrawide), selfie camera 16 megapixel <br>
+            Battery: 3800 mAh <br>
+            Dimensions: 160.9x74.4x8.1 mm <br>
+            Weight: 190 g <br>
+            Android version: 9 <br>
+            Miscellaneous: Fingerprint reader, stereo speaker<br /><b>1,149.00</b></p>
+        </div>
+      </div>
+
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://i.ibb.co/t2gJ2pq/Capture.png" style="width:100%" id="Samsung Galaxy S21 Ultra" />
+            <span class="w3-tag w3-display-topleft">New</span>
+          </div>
+          <p>
+            Samsung Galaxy S21 Ultra <br>
+            Screen: 6.8 ins dynamic AMOLED 120 Hz QHD+ <br>
+            Processor: Exynos 2100 (5 nm) <br>
+            Camera: 108 + 10 + 10 +12 megapixels, selfie camera 40 megapixels <br>
+            Battery: 5000 mAh Dimensions: 165.1 x 75.6 x 8.9 mm. <br>
+            Android version: 11 with One UI 3.1 <br>
+            Miscellaneous: Support for S Pen, up to 16 GB RAM, 5G
+            <br><b>$1,199</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://p1.akcdn.net/full/707866992.oneplus-nord-5g-128gb-8gb-ram-dual.jpg" style="width:100%"
+              id="Oneplus Nord" />
+            <span class="w3-tag w3-display-topleft">Most afordable</span>
+          </div>
+          <p>
+            Oneplus Nord <br>
+            Screen: 6.44 ins AMOLED, 90 Hz – 1080x2400 pixels <br>
+            Processor: Qualcomm Snapdragon 765 <br>
+            Camera: 48+8+5+2 megapixel (wide, ultrawide, depth, macro), selfie camera 32+8 <br>
+            Battery: 4115 mAh <br>
+            Android version: 10 Miscellaneous<br>
+            Fingerprint reader in screen
+            <br><b>$299.99</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img
+              src="https://www.mobilepoint.bg/uploads/com_article/gallery/samsung-galaxy-note-20-ultra-5g-n986b-256gb-12gb-ram-mystic-bronze.jpg"
+              style="width:100%" id="Samsung Galaxy Note 20 Ultra" />
+            <span class="w3-tag w3-display-topleft">DELUXE</span>
+          </div>
+          <p>
+            Samsung Galaxy Note 20 Ultra <br>
+            Screen: 6.9 inch AMOLED – 1440x3088 pixels <br>
+            Processor: Qualcomm Snapdragon 865 (1x3 GHz, 3x2.42, 4x1.8 GHz) <br>
+            Camera: 108+12+12 megapixel (wide, telephoto/periscope, ultrawide), selfie camera 10 megapixel <br>
+            Battery: 4500 mAh <br>
+            Android version: 10 <br>
+            Fingerprint reader in screen, wireless charging (+reverse), water resistant, pen
+            <br><b>$1,299</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://p1.akcdn.net/full/613535493.xiaomi-redmi-note-8-pro-128gb-6gb-ram-dual.jpg"
+              style="width:100%" id="Xiaomi Redmi Note 8 Pro" />
+            <span class="w3-tag w3-display-topleft">Budget</span>
+          </div>
+          <p>
+            Xiaomi Redmi Note 8 Pro <br>
+            Screen: 6.53 inch IPS, 1080x2340 pixels <br>
+            Processor: Mediatek Helio G90T, 2x2.05 GHz+6x2 GHz <br>
+            Camera: 64+8+2+2 Megapixel (wide, ultrawide, macro, depth), selfie camera 20 megapixel <br>
+            Battery: 4500 mAh <br>
+            Android version: 9 <br>
+            Fingerprint reader
+            <br><b>$219.98</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://mobilsalg.com/wp-content/uploads/2021/01/apple-iphone-12-farver-bagside-1.jpg"
+              style="width:100%" id="Apple Iphone 12" />
+            <span class="w3-tag w3-display-topleft">Budget</span>
+          </div>
+          <p>
+            Apple Iphone 12 <br>
+            Screen: 6,1 in. Oled - 1170 x 2532 pixels <br>
+            Processor: Apple A14 Bionic (6 cores) Camera: 12+12 Megapixel (wide, ultrawide), selfie camera 12 megapixel
+            <br>
+            Battery: 2 815 mAh <br>
+            Operating System: IOS 14 <br>
+            Facial recognition, water resistant, stereo speakers
+            <br><b>$999.00</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="http://atomselectronics.com/wp-content/uploads/2020/12/pro-max.jpg" style="width:100%"
+              id="Apple Iphone 12 Pro" />
+            <span class="w3-tag w3-display-topleft">DELUX</span>
+          </div>
+          <p>
+            Apple Iphone 12 Pro <br>
+            Screen: 6,1 in. Oled - 1170 x 2532 pixels <br>
+            Processor: Apple A14 Bionic (6 cores) Camera: 12+12 Megapixel (wide, ultrawide), selfie camera 12 megapixel
+            <br>
+            Battery: 2 815 mAh <br>
+            Operating System: IOS 14 <br>
+            Facial recognition, water resistant, stereo speakers
+            <br><b>$1,999.00</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img
+              src="https://www.giztop.com/media/catalog/product/cache/dc206057cdd42d7e34b9d36e347785ca/l/e/legion_duel_2.jpg"
+              style="width:100%" id="Lenovo Legion Duel" />
+            <span class="w3-tag w3-display-topleft">GAMING</span>
+          </div>
+          <p>
+            Lenovo Legion Duel <br>
+            Screen: 6.65 ins AMOLED, 144 Hz – 1080x2340 pixels <br>
+            Processor: Qualcomm Snapdragon 865+ (1x3.09 GHz, 3x2.42 GHz, 4x1.8 GHz) <br>
+            Camera: 64+16 Megapixel (wide, ultrawide), selfie camera 20 megapixel <br>
+            Battery: 5000 mAh<br>
+            Android version: 10 <br>
+            Fingerprint reader in screen, dual charging ports, motorised selfie camera, shoulder buttons
+            <br><b>$1,315.00</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://cdn.alzashop.com/ImgW.ashx?fd=f16&cd=SAMO0204b2" style="width:100%"
+              id="Samsung Galaxy A42 5G" />
+            <span class="w3-tag w3-display-topleft">For the people</span>
+          </div>
+          <p>
+            Samsung Galaxy A42 5G <br>
+            Screen: 6.6 inch AMOLED 720 x 1600 pixels <br>
+            Processor: Qualcomm Snapdragon 750G Camera: 48+8+5+5 megapixels, selfie camera 20 megapixels <br>
+            Battery: 5000 mAh <br>
+            Android version: 10
+            <br><b>$359.99</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51UhGxv274L._AC_SL1000_.jpg" style="width:100%"
+              id="Huawei P30 Pro" />
+            <span class="w3-tag w3-display-topleft">NEW</span>
+          </div>
+          <p>
+            Huawei P30 Pro <br>
+            Screen: 6.47 inch - 1080 x 2340 pixels <br>
+            Processor: HiSilicon Kirin 980 <br>
+            Camera: 40+20+8 megapixel, selfie camera 32 megapixel <br>
+            Battery: 4,200 mAh<br>
+            Android version: 9 (Pie) <br>
+            Fingerprint reader in screen, IP68 classified, wireless charging in two directions
+            <br><b>$459.99</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img
+              src="https://www.giztop.com/media/catalog/product/cache/1d54c77235ad9c5000509537c351eadb/h/u/huawei_mate_20_pro_4.png"
+              style="width:100%" id="Huawei Mate 20 Pro" />
+            <span class="w3-tag w3-display-topleft">SALE</span>
+          </div>
+          <p>
+            Huawei Mate 20 Pro <br>
+            Screen: 6.39” - 3120x1440 px <br>
+            Processor: HiSilicon Kirin 980 Octa core 2.26 GHz <br>
+            Camera: 1x40 MP + 1x20 MP + 1x8 MP, selfie camera: 24 MP <br>
+            Battery: 4200 mAh <br>
+            Android version: 9 (Pie)<br>
+            IP68 classified (water and dust resistant), fingerprint reader in screen, iris scanner, wireless charging
+            (two-way)
+            <br><b>$1555.33</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-col l3 s6">
+        <div class="w3-container">
+          <div class="w3-display-container">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51IcbdWtnCL._AC_SL1000_.jpg" style="width:100%"
+              id="Samsung Galaxy S10e" />
+            <span class="w3-tag w3-display-topleft">TOP product</span>
+          </div>
+          <p>
+            Samsung Galaxy S10e <br>
+            Screen: 5.8 inch - 1080 x 2280 pixels <br>
+            Processor: Exynos 9820, 2.73 GHz <br>
+            Camera: 12+16 megapixel, selfie camera 10 megapixel <br>
+            Battery: 3,100 mAh <br>
+            Android version: 9 (Pie)<br>
+            Fingerprint reader, IP68 classified, wireless charging in two directions
+            <br><b>$400.00</b>
+          </p>
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div id="newsletter" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom" style="padding: 32px">
+        <div class="w3-container w3-white w3-center">
+          <i onclick="document.getElementById('newsletter').style.display='none'"
+            class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+          <h2 class="w3-wide">NEWSLETTER</h2>
+          <p>
+            Join our mailing list to receive updates on new arrivals and special
+            offers.
+          </p>
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Enter e-mail" />
+          </p>
+          <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom"
+            onclick="document.getElementById('newsletter').style.display='none'">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Accordion
+      function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+
+      // Click on the "Jeans" link on page load to open the accordion for demo purposes
+      document.getElementById("myBtn").click();
+
+      // Open and close sidebar
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+    </script>
+</body>
+
+</html>
